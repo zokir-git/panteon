@@ -1,0 +1,17 @@
+$primary-color: #f7931e;
+$secondary-color: #0c1417;
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+@mixin text($style: normal, $weight: 600, $size: 1rem, $color: $primary-color) {
+  font-style: $style !important;
+  font-weight: $weight !important;
+  font-size: $size !important;
+  color: $color;
+}

@@ -10,11 +10,63 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Panteon</title>
   </head>
   <body>
+    <div class="mainPAge__wrapper">
+      <div class="container mx-auto">
+        <header class="main__header relative">
+          <a href="#">
+            <img
+              src="./images/web_logo.svg"
+              alt="website logo panteon"
+              width="200"
+              height="106"
+            />
+          </a>
 
-    
+          <nav class="web__nav text-white">
+            <ul class="nav__list">
+              <li class="nav__items mx-2">
+                <a class="inline-block p-3" href="#">О нас</a>
+              </li>
+              <li class="nav__items mx-2">
+                <a class="inline-block p-3" href="#"> Галерея </a>
+              </li>
+              <li class="nav__items mx-2">
+                <a class="inline-block p-3" href="#"> Абонементы </a>
+              </li>
+              <li class="nav__items mx-2">
+                <a class="inline-block p-3" href="#"> Тренеры </a>
+              </li>
+              <li class="nav__items mx-2">
+                <a class="inline-block p-3" href="#"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+
+          <span class="header__contact text-white"> +7 (496) 416-19-16 </span>
+
+          <div class="yellow"></div>
+          <div class="while__lone-box"><div class="while__line"></div></div>
+        </header>
+      </div>
+
+      <article class="main__page-articles mt-24">
+        <h1 class="main__page-titel">Фитнес клуб Пантеон</h1>
+        <p class="main__page-text font-[500] text-white text-[28px] mt-9">
+          Лучше нас только боги
+        </p>
+
+        <div class="start__text-wrapper mx-auto">
+          <div class="start__text-box p-5 mt-8 text-white">
+            <p class="start__text font-bold">Получить консультацию</p>
+          </div>
+          <span class="white__line-middle"></span>
+        </div>
+      </article>
+    </div>
   </body>
 </html>

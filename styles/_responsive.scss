@@ -1,0 +1,92 @@
+@import "./mixins";
+// ****************************************************************
+//              MOBILE STYLES
+// ****************************************************************
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .container {
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .mainPAge__wrapper {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.1) 100%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url(../images/bg-mobile.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px !important;
+  }
+  .web__nav {
+    display: none;
+  }
+  .header__contact {
+    display: none;
+  }
+
+  .yellow {
+    border-top: 25px solid $primary-color !important;
+    border-left: 25px solid transparent !important;
+    border-right: 25px solid transparent !important;
+    border-bottom: 25px solid transparent !important;
+    transform: rotate(51.99deg);
+    width: 118px !important;
+
+    position: absolute;
+    right: 30px !important;
+    top: -10px !important;
+  }
+  .while__line {
+    border: 1px solid white;
+    width: 300px;
+    height: 25px !important;
+    position: relative;
+    transform: skew(-40deg);
+  }
+  .while__lone-box {
+    transform: rotate(52deg);
+    position: absolute;
+    right: -30px !important;
+    top: -70px !important;
+    width: 201px;
+  }
+}
+
+// ****************************************************************
+//              TABLET STYLES
+// ****************************************************************
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .mainPAge__wrapper {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.1) 100%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url(../images/bg-tablet.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 950px !important;
+  }
+
+  .main__header {
+    grid-template-columns: 3fr 2fr !important;
+    align-items: center;
+  }
+
+  .web__nav {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+
+  .main__page-titel {
+    @include text($style: normal, $weight: 700, $size: 58px, $color: white);
+  }
+}
